@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/employees');
+mongoose.connect('mongodb://user:12@ds133192.mlab.com:33192/employees');
 var Employee = mongoose.model('Employee', mongoose.Schema({
 	name:String,
 	dept:String,
